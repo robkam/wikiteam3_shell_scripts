@@ -27,7 +27,7 @@ All operations should be executed in the `~/wikiteam3_utilities` directory.
 
 * **check_xml_integrity.sh**: Simple integrity check of the dumped XML files. The first three numbers should be the same, the last two numbers should be the same and the file should end in `</mediawiki>`
 
-* **upload_wikis.sh**: Uploads all dumps in `./dumps` to Internet Archive. Creates `upload_wikis.txt` listing duration of each upload.
+* **upload_wikis.sh**: Uploads all dumps in `./dumps` to Internet Archive.
 
 * **cleanup.sh**: Archives the dumps from WSL directory to Windows directory, then **deletes** every directory below ./dumps and every file in ./dumps except `*.txt`. Edit `TARGET_DIR="/mnt/c/Users/USER/PATH/"` to suit your config.
 
