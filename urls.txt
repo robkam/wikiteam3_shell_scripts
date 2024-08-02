@@ -1,0 +1,4 @@
+# Examples:
+https://scruff.miraheze.org login_required
+https://sdiywiki.miraheze.org
+https://amps.wiki.gd
