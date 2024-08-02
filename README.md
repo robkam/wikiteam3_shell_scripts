@@ -1,6 +1,6 @@
 # wikiteam3_shell_scripts
 
-Shell scripts for working with [WikiTeam3](https://github.com/saveweb/wikiteam3), tested with WSL. 
+Shell scripts for batch working with [WikiTeam3](https://github.com/saveweb/wikiteam3), tested with WSL.
 
 ## Prerequisites
 
@@ -19,9 +19,9 @@ All operations should be executed in the `~/wikiteam3_utilities` directory.
 
 ### Scripts and files
 
-* **download_wikis.sh**: Downloads wikis using `wikiteam3dumpgenerator`. Takes a filename as a parameter e.g. `urls.txt`. Edit to as required.
+* **download_wikis.sh**: Downloads wikis using `wikiteam3dumpgenerator`. Takes a filename as a parameter e.g. `urls.txt`. Edit `DUMP_COMMAND_PLUS="--cookies cookies.txt --user USER --pass PASSWORD"` as required.
 
-* **./dumps/urls.txt**: One wiki URL per line. Lines starting with # are treated as comments. Place in `./dumps` directory. For private Miraheze wikis append login_required.
+* **./dumps/urls.txt**: One wiki URL per line. Lines starting with # are treated as comments. Place in `./dumps` directory. For private wikis append `login_required`.
 
 * **./dumps/cookies.txt**: For private wikis export from the browser, needs to be in Netscape format.
 
@@ -29,7 +29,7 @@ All operations should be executed in the `~/wikiteam3_utilities` directory.
 
 * **upload_wikis.sh**: Uploads all dumps in `./dumps` to Internet Archive. Creates `upload_wikis.txt` listing duration of each upload.
 
-* **cleanup.sh**: Archives the dumps from WSL folder to Windows folder, edit to suit your config.
+* **cleanup.sh**: Archives the dumps from WSL folder to Windows folder, edit `TARGET_DIR="/mnt/c/Users/USER/PATH/"` to suit your config.
 
 * **file-info.sh**: Prints file info useful for manually updating Wikiteam3dumpgenerator `images.txt` file. Remember to change "images": false to "images": true in config.json file when uploading images.
 
