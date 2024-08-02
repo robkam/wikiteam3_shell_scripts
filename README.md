@@ -29,7 +29,7 @@ All operations should be executed in the `~/wikiteam3_utilities` directory.
 
 * **upload_wikis.sh**: Uploads all dumps in `./dumps` to Internet Archive. Creates `upload_wikis.txt` listing duration of each upload.
 
-* **cleanup.sh**: Archives the dumps from WSL folder to Windows folder, edit `TARGET_DIR="/mnt/c/Users/USER/PATH/"` to suit your config.
+* **cleanup.sh**: Archives the dumps from WSL folder to Windows folder, then **deletes** every directory below ./dumps and every file in ./dumps except `*.txt`. Edit `TARGET_DIR="/mnt/c/Users/USER/PATH/"` to suit your config.
 
 * **file-info.sh**: Prints file info useful for manually updating Wikiteam3dumpgenerator `images.txt` file. Remember to change "images": false to "images": true in config.json file when uploading images.
 
